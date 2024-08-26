@@ -1,0 +1,362 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Personal Website - Joseph Daws</title>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="lib/jquery.min.js"></script>
+  </head>
+
+  <body >
+    <div class="cursor">
+    </div>
+    5
+  <div id="header">
+      <div class="container">
+          <nav id="menu">
+            <img src = "images/JosephDawsLogo.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class = "header-text">
+          <p class="starter-text">Hi, my name is <br> 
+          <p class="name">Joseph Daws</p>
+          <p class="job-title">I am an aspiring programmer.</p><br>
+          <p class="after-text"> My goal is to combine my strong problem solving and data analysis skills
+            with the complex world of algorithm development & design. 
+        </div> 
+        </div>
+      </div>
+    </div>
+<!----------------------------------------------- About ---------------------------------------------------------->
+    <div id = "about">
+      <div class = "container">
+        <div class = "row">
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              
+              <div class = "tab-titles">
+                <p class="tab-links active-link" onclick="opentab('summary')">Summary</p>
+                <p class="tab-links" onclick="opentab('skills')">Software</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('awards')">Awards</p>
+              </div>
+              <div class="tab-contents active-tab" id = "summary">
+                <ul>
+                  <p>
+                    I thrive on solving problems and personal improvement. 
+                    During my Master's project, at the University of Oxford, 
+                    I developed high levels of problem solving and data analysis skills that were necessary to model and visualize complex 
+                    chemical systems.
+                  <br><br>
+                  After my degree, I took a role at the consulting startup Tunneys. 
+                  In this role, I have developed skills in software and programming languages such as: Python, 
+                  Power BI, Microsoft Fabric and Azure. Working at a startup has required independent and self-accountable learning. 
+                  This involved implementing production level code & data analysis with little supervision often implementing new techniques 
+                  and products that were previously not offered by the company, including Python notebooks, web-based reports,
+                   Azure Lakehouse & Warehouse storage/analysis. 
+                  <br><br>
+                  In my career, I want to focus on the higher levels of problem solving required when working with Python. 
+                  I have expanded my skills outside of work by researching python, implementing code in the form of solving 
+                  tasks/problems and personal projects.
+                  <br><br>
+                  As a result, my programming and data analysis skills have increased dramatically over the 
+                  last year and I am continuing to work diligently to further expand these skills.
+                  </p>
+                </ul>
+              </div>
+              <div class="tab-contents " id = "skills">
+                <ul>
+                  <li><span>Computer Programming</span><br>Python.</li>
+                  <p>
+                    As a Data Analyst, I use Python with Pandas & pySpark to process and analyse data. 
+                    In my spare time I also build projects and solve data structures and algorithm problems.
+                  </p>
+                  <li><span>Data Analytics</span><br>Power BI, Power Apps & Excel</li>
+                  <p>
+                    I present data within Power BI and Excel. 
+                    Along with building financial models using Excel and Power Apps to allow clients to enter data 
+                    directly into the model/database within Sharepoint sites & Power BI reports.
+                  </p>
+                  <li><span>Data Storage & ETL</span><br>SQL server, data pipelines, Lakehouses & M/Power Query</li>
+                  <p>
+                    Typically, client data is stored and managed using Data Pipelines 
+                    & Warehouses/Lakehouses within Microsoft Fabric. 
+                    Our systems allow for near real-time data processing and forecasting. 
+                    My implementation of Data Pipelines allows for automatic refresh of 
+                    analysis, stored SQL procedures & Python notebooks.
+                  </p>
+                  <li><span>Data Science & Analysis </span><br>Python, Pandas, Spark & pySpark</li>
+                  <p>
+                    In addition to using SQL, many of our large-scale data transformations 
+                    are performed using cloud-based fabric notebooks with Spark & Pandas. 
+                    My forecasting has been completed using models such as SARIMA to predict 
+                    the seasonality and adjust the trend of revenue etc.
+                  </p>
+                  <li><span>Financial Modelling</span><br>Excel, VBA & Python</li>
+                  <p>I have developed financial models including project management for a biotech startup, 
+                    financial analysis for a large private equity firm and revenue projections for company sales.
+                  </p>  
+                    <li><span>Cloud Architecture & Web hosting</span><br>Azure Cloud Services</li>
+                  <p>One product I developed is a custom web app using Power BI Embedded with Microsoft Entra P1 authentication. 
+                    This allows clients/businesses to authenticate to their power BI reports 
+                    without a Power BI license through our custom designed web portal that is hosted on an Azure web app. </p>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "experience">
+                <ul>
+                  <li><span>2023 - Current</span><br>Data Analyst for Tunneys Consulting.</li>
+                  <p><span><u>Financial modelling for startup companies.</u></span> 
+                    <br><br>
+                    I developed several financial models for startup companies, up to revenues of $10 M, 
+                    that analysed core business metrics such as profitability, 
+                    revenue growth and customer retention. This was done using Excel and Power BI with data being presented within 
+                    Power BI reports and in Power BI Embedded reports hosted on Azure Web applications. 
+                    <br><br>
+                    <span><u>Financial modelling for a large Private Equity firm.</u></span>
+                    <br><br>
+                    I designed a financial model to analyse the performance of investments and funds by fund managers to present to 
+                    shareholders on $100 M investments. As part of this, I cleaned and streamlined their data storage process to allow for extra 
+                    fund analysis and future scalability. 
+                    This enhanced the shareholders understanding of their fund finances & forecast profits. 
+                    <br><br>
+                    <span> <u>Project management system for a biotech startup.</u></span>
+                    <br><br>
+                    I developed an Excel model with VBA Macros to allocate staff full time equivalence and schedule multiple pharmaceutical projects.
+                    As part of this process, 
+                    I implemented high levels of data validation and automation to improve model scalability and useability. 
+                    <br><br>
+                    <span><u>Improving company forecasting & analysis techniques.</u></span>
+                    <br><br>
+                    Since I joined the company, I have led the new implementation of analysis and forecasting on Microsoft Fabric using Azure Data Factory, 
+                    Fabric notebooks with Python & Pandas. 
+                    This has provided SARIMA modelling for our clients to forecast their revenue and profits. 
+                    <br><br>
+                    <span><u>Improving company data storage & processing methods.</u></span>
+                    <br><br>
+                    We have now moved our clients to a cloud storage and computing solution, using Data Warehouses/Lakehouses. 
+                    This allows for scheduled and automated refresh for near real time data analysis and updating. 
+                    Combined with Power apps, we enabled clients to directly add data into the SQL Endpoint from their reports. 
+                    </p>
+                  </ul>
+                <ul>
+                  <li><span>2023 - Current</span><br>Contracted Tutor for TutorChase.</li>
+                  <p>As a contracted tutor for TutorChase, I focus on tutoring Mathematics at A-level and Chemistry up to Undergraduate level. 
+                    I also mentor students on Oxbridge personal statements and interviews.
+                  </p>
+                </ul>
+                <ul>
+                  <li><span>July 2023</span><br>Chemistry Ambassador for University of Oxford.</li>
+                  <p>This was a weekend role as a Chemistry department ambassador. 
+                    This involved answering questions of potential applicants and 
+                    giving tours around the Chemistry Research Laboratory.</p>
+                </ul>
+                <ul>
+                  <li><span>July 2022 - Aug 2022</span><br>Water Technician for Jersey Water.</li>
+                  <p>I undertook water testing and analysis including on-site testing, 
+                    off-site testing & analysis of water testing data. 
+                  </p>
+                </ul>
+                <ul>
+                  <li><span>Jan 2021 - Sep 2021</span><br>Medical Laboratory Assistant at OpenCell BioTech.</li>
+                  <p> 
+                    As part of a team, I performed PCR COVID testing for the island of Jersey, 
+                    scaling up sample testing from 300 to 1,500 samples a day. 
+                    My role was delegating tasks, managing shifts along with 
+                    directly testing PCR samples and troubleshooting quality control/contamination issues.
+                  </p>
+                </ul>
+                <ul>
+                  <li><span>Aug 2018 - Sep 2018</span><br>Oxford Interview Tuition.</li>
+                  <p>
+                    I instructed students on what an Oxford interviewer is 
+                    looking for and how best to prepare for the interview.
+                  </p>
+                </ul>
+                <ul>
+                  <li><span>Sep 2015 - May 2018</span><br>Shopfront Worker at Shopmobility.</li>
+                  <p>I took payments, delivered scooters, 
+                    managed inventory/rentals and completed data entry.
+                  </p>
+                </ul>
+                <ul>
+                  <li><span>Feb 2013 - Oct 2015</span><br>Tutor at charity Words & Numbers Matter.</li>
+                  <p>I tutored students with learning difficulties in English, Maths & Reading.</p>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "education">
+              <ul>
+                <li><span>2022 - 2023</span><br>Master's Thesis in Chemical Physics, University of Oxford.</li>
+                  <p>
+                    Classification: Distinction | Mark 78% 
+                    <br>
+                    <br> 
+                    My master's thesis focused on utilizing molecular simulations to simulate rod-like particle phase behaviour.
+                    These simulations were performed using Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS).
+                    The particles were modelled as a collection of hard spheres and molecular interactions (depletion interactions)
+                    as Lennard-Jones potentials. This generated phase behaviour similar to the experimental and theoretical literature of these systems.
+                    <br>
+                    <br>
+                    <span> Learn more</span>
+                  </p>
+                  <li><span>2018 - 2023</span><br>Master's Degree in Chemistry, University of Oxford.</li>
+                  <p>Classification: First Class Honours | Mark: 89 | Rank: 2nd
+                    <br>
+                    <br>
+                    Throughout my undergraduate degree, I particularly enjoyed highly mathematical modules such as Quantum Chemistry, Statistical Mechanics & Thermodynamics. 
+                    As a chemist many of the systems studied where highly complex chemical & physical systems. To predict and rationalize behaviour for these systems
+                    you are required to clearly define model assumptions and then use the key patterns of your data/theory. 
+                    It was always important to understand the margin of error and level of predictability that your model could provide and in addition 
+                    where the model breaks down. 
+                    
+                    </p>
+                  <li><span>2016 - 2018</span><br>4 A* at A-level in Chemistry, Physics, Maths & Further Maths</li>
+                  <li><span>2014 - 2016</span><br>11 A* and A in GCSE </li>
+                  <p>Applications in Mathematics: A*, Biology: A*, Chemistry: A*, Design and Technology Resistant Materials: A*, 
+                      English Language: A*, English Literature: A*, General Science: A*, Geography: A*, Methods in Mathematics: A*, 
+                      Philosophy: A*, Physics: A* and French: A.</p>
+              </ul>
+            </div>
+            <div class="tab-contents" id = "awards">
+              <ul>
+                <li><span>2023 Sep</span><br>Pride of Jersey - Young Ambassador of the Year Finalist.</li>
+                <p>Finalist across the island of Jersey. </p>
+                <li><span>2023 June</span><br>Oxford Encaenia Award.</li>
+                <p>Annually awarded to two undergraduates in the Sciences & Mathematics division of Oxford University for excellence in their respective field.</p>
+                <li><span>2022 Sep</span><br>Gibbs Prize for Undergraduate Chemistry</li>
+                <p> Awarded for the top mark in the chemistry finals undergraduate exams.</p>
+                <li><span>2019 Sep</span><br>Oxford Scholarship</li>
+                <p> Awarded for obtaining a a distinction in first year (preliminary) examinations. 
+                <li><span>2019 Sep</span><br>Shimadzu Prize</li>
+                <p> For top performance in 1st year chemistry practicals.</p>
+                <li><span>2018 Sep</span><br>A-level Chemistry & Mathematics Awards </li>
+                <p>Awarded for the top performance in my school for Chemistry & Mathematics. </p>
+                <li><span>2016 Sep</span><br>GCSE Awards in Biology, Chemistry, English & Maths.</li>
+                <p>Awarded for the top performance in my school in Biology, Chemistry, English & Mathematics. </p>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ------------------------------------Services------------------------------- -->
+<div id="portfolio" >
+  <div class="container">
+    <h1 class="sub-title">Portfolio</h1>
+    <p class="intro"> This past year I have dedicated a large portion of my spare time to mastering Python and learning data structures & algorithms. 
+        <br>
+        <br>
+        During my spare time by solving problems and building projects I have learnt a number of core programming principles. 
+        While building my space invaders & tetris games, I learnt the value of writing short clean code and refactoring code.
+        This has enhanced my ability to understand the code I have previously written, deal with bugs and iterate on this code. 
+        Another important skill I have learnt is how to break down problems into smaller subproblems through techniques such as helper functions, recursion and divide & conquer. 
+        <br>
+        <br>
+        Below are some details and links to my github repositorys. 
+    </p>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-gamepad"></i>
+        <h2>Space Invaders</h2>
+        <p> Using Pygame to build a retro space invaders game. </p>
+        <a href=https://github.com/JosephPublicCode/alien_invasion>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-layer-group"></i>
+        <h2>Data Structures & Algorithms</h2>
+        <p> Using Python to write common data structures and algorithms such as; Prim's Algorithm, Dijkstra's Algorithm & implementing a Binary heap.</p>
+        <a href=https://github.com/JosephPublicCode/Algorithms-and-Data-Structures>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-square"></i>
+        <h2>Tetris</h2>
+        <p> Using Pygame to create tetris.</p>
+        <a href=https://github.com/JosephPublicCode/tetris>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Leetcode Problems</h2>
+        <p> Solving leetcode problems using: Python, Pandas & SQL.</p>
+        <a href=https://github.com/JosephPublicCode/my-leetcode-solutions>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-folder"></i>
+        <h2>File Cleaners</h2>
+        <p> Using Python to manage my files by file type and clean my downloads folder. </p>
+        <a href=https://github.com/JosephPublicCode/my-leetcode-solutions>Learn more</a>
+      </div>
+    </div>
+    <div class = "seemore">
+    <a href="https://github.com/JosephPublicCode" class = "btn"> See More</a>
+    </div>
+  </div>
+
+  
+</div>
+
+
+<!-- ---------------------- Contact Me --------------------- -->
+<div id="contact">
+  <div class ="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class ="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>joedaws1@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/joedaws/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/JosephPublicCode"><i class="fa-brands fa-github"></i></a>
+        </div><br>
+        <a href="/Images/CV_Joseph_Daws.png" class="btn btn2" download="">Download CV</a>
+      </div>
+      <div class="contact-right" >
+        <form onsubmit="return false" id = 'form'>
+          <!-- Honeypot -->
+          <input type="text" name = "_honey" style="display:none;"> 
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value ="false">
+          
+          <!-- inputs -->
+          <input id = "firstname" type = "text" name="First&nbsp;Name" spellcheck = "false" placeholder ="First Name" required>
+          <input id = "lastname" type = "text" name="Last&nbsp;Name" placeholder ="Last Name" spellcheck="false" required><br>
+          <input id = "email" type = "email" name="Email" placeholder ="Your Email" required><br>
+          <input id = "mobile" type = "tel" name="Phone&nbsp;Number" placeholder ="Your Mobile Number"><br>
+          <textarea id = "message" name = "Message" rows = "6" placeholder="Your Enquiry"></textarea> 
+          <button id ="submit" class="btn btn2" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+  <script src="https://kit.fontawesome.com/283ddde447.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="javaScript/script.js"></script>
+
+
+</body>
+ <footer id='copyright' class="copyright"> 
+    <p>Copyright <i class="fa-regular fa-copyright"></i> Joseph Daws 2024</p>
+ </footer>
+
+</html>
