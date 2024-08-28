@@ -440,7 +440,7 @@ nav .fa-solid {
 
 @media only screen and (max-width:600px){
   #header{
-    ;
+    overflow-x: hidden;
   }
   .header-text{
     margin-top:20%;
